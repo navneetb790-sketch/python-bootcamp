@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎓 Python Bootcamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Lesson Content -->
+            <div class="lesson" id="lesson">
+                <h1 id="lesson-title">Welcome to Python Bootcamp! 🚀</h1>
+                <div class="content" id="lesson-content">
+                    <p>Click "Start Learning" to begin your Python journey!</p>
+                </div>
+                
+                <!-- Code Editor -->
+                <div class="code-editor" id="code-editor" style="display:none;">
+                    <pre><code id="code-display"></code></pre>
+                    <div class="output">
+                        <h3>🖥️ Live Output:</h3>
+                        <div id="live-output"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Controls -->
+            <div class="controls">
+                <button id="start-btn" class="btn primary">🎯 Start Learning</button>
+                <button id="next-btn" class="btn secondary" style="display:none;">Next Lesson ➡️</button>
+                <button id="try-btn" class="btn accent" style="display:none;">✨ Try Yourself</button>
+            </div>
+        </div>
+        
+        <!-- Quiz Modal -->
+        <div class="modal" id="quiz-modal">
+            <div class="modal-content">
+                <h2>🧠 Quick Quiz!</h2>
+                <div id="quiz-questions"></div>
+                <button id="quiz-submit">Submit Answers</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
